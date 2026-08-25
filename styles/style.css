@@ -1,5 +1,64 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0 auto;
+  padding: 10px;
+  color: var(--text-clr);
+  font-size: 18px;
+  background-image: var(--cover-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+
+  .page {
+    padding: 20px;
+  }
+}
+
+.accented-shadow-text {
+  color: var(--accent-heading-clr);
+  font-weight: 700;
+  font-size: var(--accent-heading-fs-mobile);
+  line-height: 82.5%;
+}
+
+@media (min-width: 1024px) {
+
+  .accented-shadow-text {
+    font-size: var(--accent-heading-fs-desktop);
+  }
+}
+
+.accented-background {
+  color: var(--accent-clr-with-background);
+  background-color: var(--accent-clr);
+}
+
+.accented-text {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.accented-text_bold {
+  font-weight: 700;
+}
+
+.h2-heading {
+  margin: 0 0 20px;
+  color: var(--heading-clr);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.accented-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-clr);
+}
+
+.paragraph-text {
+  margin: 10px 0 20px;
+  line-height: 130%;
 }
